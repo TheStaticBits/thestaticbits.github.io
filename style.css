@@ -1,3 +1,47 @@
+* {
+    margin: 0;
+}
+
 body {
+    background-color: white;
+    margin: 0;
+}
+
+.bar {
+    display: inline-block;
+    width: 100%;
+    position: fixed;
     background-color: aqua;
+    padding: 2% 5%;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0px 6px darkblue;
+    margin-top: -4px;
+}
+
+h3 {
+    margin: 0px 0px;
+    display: inline-block;
+}
+
+.btn {
+    margin-left: 5px;
+    padding: 7px 10px;
+    border-radius: 10%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(0, 81, 255);
+    background-color: rgb(0, 162, 255);
+    transition-duration: 0.15s;
+    box-shadow: 0px 6px blue;
+    top: -3px;
+    cursor: pointer;
+}
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 2px blue;
+}
+.btn:hover {
+    border-color: rgb(62, 123, 255);
+    background-color: rgb(73, 188, 255);
 }
