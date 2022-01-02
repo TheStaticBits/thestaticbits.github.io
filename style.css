@@ -1,6 +1,4 @@
-* {
-    margin: 0;
-}
+* {margin: 0;}
 
 body {
     background-color: white;
@@ -15,13 +13,26 @@ body {
     padding: 2% 5%;
     border: none;
     overflow: hidden;
-    box-shadow: 0px 6px darkblue;
+    box-shadow: 0px 6px rgb(0, 133, 156);
     margin-top: -4px;
 }
 
-h3 {
-    margin: 0px 0px;
+.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 170px; padding-bottom: 100px;
+    background-color: rgb(72, 255, 56);
+}
+
+h1 {
     display: inline-block;
+    text-shadow: 2px 2px rgb(120, 120, 151, 20);
+}
+
+hr {
+    margin-left: 25%;
+    margin-right: 25%;
+    color: black;
 }
 
 .btn {
