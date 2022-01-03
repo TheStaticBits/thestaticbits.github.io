@@ -11,7 +11,8 @@ body {
     position: fixed;
     background-color: rgb(0, 217, 255);
     height: 45px;
-    padding-top: 6px;padding-bottom: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 3px;
     border: none;
     overflow: hidden;
@@ -22,8 +23,9 @@ body {
     width: 100%;
     text-align: center;
     padding-top: 100px; padding-bottom: 30px;
-    box-shadow: 0px 3px black;
+    box-shadow: 0px -10px 35px 5px black;
     transition-duration: 0.5s;
+    margin-bottom: 10px;
 }
 .title:hover {
     padding-top: 150px;
@@ -32,7 +34,7 @@ body {
 
 h1 {
     display: inline-block;
-    text-shadow: 0px 2px rgb(99, 99, 99);
+    text-shadow: 0px 2px 5px rgb(99, 99, 99);
 }
 
 hr {
@@ -63,14 +65,24 @@ hr {
     background-color: rgb(73, 188, 255);
 }
 
+img {
+    border-radius: 20px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .item {
-    width: 90%;
-    height: 100px;
+    width: 600px;
+    height: 200px;
     background-color: rgb(0, 255, 225);
     border-radius: 20px;
-    box-shadow: 0px 0px rgb(150, 150, 150);
+    border: solid;
+    border-color: rgb(3, 157, 252);
+    border-width: 5px;
+    box-shadow: 0px 0px rgb(3, 90, 252);
+    transition-duration: 0.2s;
 }
 .item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 4px rgb(150, 150, 150);
+    transform: translateY(-6px);
+    box-shadow: 0px 6px rgb(3, 90, 252), 0px 6px 8px 3px rgb(150, 150, 150);
 }
