@@ -83,6 +83,8 @@ img {
 }
     
 .item {
+    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
     width: 600px;
     height: 200px;
