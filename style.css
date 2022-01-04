@@ -22,13 +22,13 @@ body {
 .title {
     width: 100%;
     text-align: center;
-    padding-top: 100px; padding-bottom: 30px;
+    padding-top: 80px; padding-bottom: 30px;
     box-shadow: 0px -15px 35px 5px black;
     transition-duration: 0.5s;
     margin-bottom: 10px;
 }
 .title:hover {
-    padding-top: 130px;
+    padding-top: 110px;
     padding-bottom: 60px;
 }
 
@@ -36,6 +36,10 @@ h1 {
     display: inline-block;
     text-shadow: 0px 2px 5px rgb(99, 99, 99);
     color: black;
+    transition-duration: 0.2s;
+}
+h1:hover {
+    color: rgb(50, 50, 50);
 }
 
 hr {
@@ -54,12 +58,12 @@ hr {
     border-color: rgb(0, 81, 255);
     background-color: rgb(0, 162, 255);
     transition-duration: 0.15s;
-    box-shadow: 0px 6px blue;
+    box-shadow: 0px 6px blue, 0px 6px 8px rgb(150, 150, 150);
     cursor: pointer;
 }
 .btn:active {
     transform: translateY(4px);
-    box-shadow: 0px 2px blue;
+    box-shadow: 0px 2px blue, 0px 2px 8px rgb(120, 120, 120);
 }
 .btn:hover {
     border-color: rgb(62, 123, 255);
