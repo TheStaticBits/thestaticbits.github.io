@@ -12,8 +12,8 @@ body {
     z-index: 1;
     background-color: rgb(0, 217, 255);
     height: 45px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 8px;
     padding-left: 3px;
     border: none;
     overflow: hidden;
@@ -33,7 +33,6 @@ footer > h1 {
     font-size: 20px;
     color: white;
 }
-
 /* fixes the text turning black when hovering over the link */
 footer > h1:hover {
     color: white;
@@ -52,10 +51,12 @@ a {
     transition-duration: 0.5s;
     margin-bottom: 10px;
 }
+/*
 .title:hover {
     padding-top: 110px;
     padding-bottom: 60px;
 }
+*/
 
 h1 {
     display: inline-block;
@@ -90,17 +91,18 @@ hr {
     transition-duration: 0.1s;
     cursor: pointer;
     
-    font: 16px Verdana;
+    font: 18px Verdana;
     font-weight: bold;
     color: white;
     text-shadow: 0px 0px 5px white;
 }
-.btn:active {
-    background-color: rgb(24, 84, 237);
-    box-shadow: 0px;
-}
 .btn:hover {
-    box-shadow: 0px 5px 10px rgb(24, 84, 237);
+    color: yellow;
+    text-shadow: 0px 0px 5px yellow;
+}
+.selected {
+    color: yellow;
+    text-shadow: 0px 0px 5px yellow;
 }
 
 img {
