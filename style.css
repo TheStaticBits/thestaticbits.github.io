@@ -36,6 +36,7 @@ body {
 h1 {
     display: inline-block;
     text-shadow: 0px 2px 5px rgb(99, 99, 99);
+    font-family: Verdana;
     color: black;
     transition-duration: 0.2s;
 }
@@ -43,6 +44,11 @@ h1:hover {
     color: rgb(50, 50, 50);
 }
 
+h3 {
+    font: 18px Verdana bold;
+    font-weight: bold;
+}
+    
 hr {
     margin-left: 25%;
     margin-right: 25%;
@@ -53,22 +59,23 @@ hr {
     margin-left: 3px;
     margin-bottom: 5px;
     padding: 7px 10px;
-    border-radius: 10%;
     border-width: 5px;
-    border-style: solid;
-    border-color: rgb(0, 81, 255);
-    background-color: rgb(0, 162, 255);
-    transition-duration: 0.15s;
-    box-shadow: 0px 6px blue, 0px 6px 8px rgb(150, 150, 150);
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0, 0);
+    transition-duration: 0.1s;
     cursor: pointer;
+    
+    font: 16px Verdana;
+    text-shadow: 0px 2px 5px rgb(99, 99, 99);
 }
 .btn:active {
-    transform: translateY(4px);
-    box-shadow: 0px 2px blue, 0px 2px 8px rgb(120, 120, 120);
+    color: white;
+    background-color: rgb(24, 84, 237);
+    box-shadow: 0px;
 }
 .btn:hover {
-    border-color: rgb(62, 123, 255);
-    background-color: rgb(73, 188, 255);
+    box-shadow: 0px 5px 10px rgb(24, 84, 237);
 }
 
 img {
