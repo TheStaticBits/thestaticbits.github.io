@@ -20,6 +20,30 @@ body {
     box-shadow: 0px -10px 35px 5px rgb(0, 102, 255);
 }
 
+footer {
+    background-color: rgb(0, 98, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 15px 35px 5px blue;
+    color: rgb(0, 98, 255);
+}
+/* Text inside footer */
+footer > h1 {
+    text-shadow: 0px 0px 2px white;
+    font-size: 20px;
+    color: white;
+}
+
+/* fixes the text turning black when hovering over the link */
+footer > h1:hover {
+    color: white;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+    
 .title {
     width: 100%;
     text-align: center;
@@ -67,10 +91,11 @@ hr {
     cursor: pointer;
     
     font: 16px Verdana;
-    text-shadow: 0px 2px 5px rgb(99, 99, 99);
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 5px white;
 }
 .btn:active {
-    color: white;
     background-color: rgb(24, 84, 237);
     box-shadow: 0px;
 }
