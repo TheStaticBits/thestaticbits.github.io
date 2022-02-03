@@ -20,66 +20,7 @@ body {
     box-shadow: 0px -10px 35px 5px rgb(0, 102, 255);
 }
 
-footer {
-    background-color: rgb(0, 98, 255);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    box-shadow: 0px 15px 35px 5px blue;
-    color: rgb(0, 98, 255);
-}
-/* Text inside footer */
-footer > h1 {
-    text-shadow: 0px 0px 2px white;
-    font-size: 20px;
-    color: white;
-}
-/* fixes the text turning black when hovering over the link */
-footer > h1:hover {
-    color: white;
-}
-
-a {
-    color: yellow;
-    text-decoration: none;
-}
-    
-.title {
-    width: 100%;
-    text-align: center;
-    padding-top: 80px; padding-bottom: 30px;
-    box-shadow: 0px -15px 35px 5px black;
-    transition-duration: 0.5s;
-    margin-bottom: 10px;
-}
-/*
-.title:hover {
-    padding-top: 110px;
-    padding-bottom: 60px;
-}
-*/
-
-h1 {
-    display: inline-block;
-    text-shadow: 0px 2px 5px rgb(99, 99, 99);
-    font-family: Verdana;
-    color: black;
-    transition-duration: 0.2s;
-}
-h1:hover {
-    color: rgb(50, 50, 50);
-}
-
-h3 {
-    font: 18px Verdana bold;
-    font-weight: bold;
-}
-    
-hr {
-    margin-left: 25%;
-    margin-right: 25%;
-    color: black;
-}
-
+/* Nav bar buttons */
 .btn {
     margin-left: 3px;
     margin-bottom: 5px;
@@ -105,12 +46,76 @@ hr {
     text-shadow: 0px 0px 5px yellow;
 }
 
+/* Footer */
+footer {
+    background-color: rgb(0, 98, 255);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 15px 35px 5px blue;
+    color: rgb(0, 98, 255);
+}
+/* Text inside footer */
+footer > h1 {
+    text-shadow: 0px 0px 2px white;
+    font-size: 20px;
+    color: white;
+}
+/* fixes the text turning black when hovering over the link */
+footer > h1:hover {
+    color: white;
+}
+
+/* Links */
+a {
+    color: yellow;
+    text-decoration: none;
+}
+    
+.title {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px; padding-bottom: 30px;
+    box-shadow: 0px -15px 35px 5px black;
+    transition-duration: 0.5s;
+    margin-bottom: 10px;
+}
+/*
+.title:hover {
+    padding-top: 110px;
+    padding-bottom: 60px;
+}
+*/
+
+/* Header and others */
+h1 {
+    display: inline-block;
+    text-shadow: 0px 2px 5px rgb(99, 99, 99);
+    font-family: Verdana;
+    color: black;
+    transition-duration: 0.2s;
+}
+h1:hover {
+    color: rgb(50, 50, 50);
+}
+
+h3 {
+    font: 18px Verdana bold;
+    font-weight: bold;
+}
+    
+hr {
+    margin-left: 25%;
+    margin-right: 25%;
+    color: black;
+}
+
 img {
     border-radius: 20px;
     /*max-width: 200px;*/
     max-height: 200px;
 }
 
+/* Projects background */
 .main {
     width: 95%;
     height: 100%;
@@ -120,7 +125,8 @@ img {
     border-radius: 10px;
     background-color: rgb(250, 250, 250);
 }
-    
+
+/* Individual projects */
 .item {
     margin-left: 10px;
     margin-right: 10px;
