@@ -54,12 +54,19 @@ body {
     text-shadow: 0px 0px 5px yellow;
 }
 
+/* Webpage content, used for locked footer */
+.content {
+    /* needs to be the same height as the footer */
+    min-height: calc(100vh - 54px);
+}
+
 /* Footer */
 footer {
+    text-align: center;
+    align-items: center;
     background-color: rgb(0, 98, 255);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    box-shadow: 0px 15px 35px 5px blue;
+    box-shadow: 0px 10px 35px 5px blue;
+    padding: 15px 0px;
     color: rgb(0, 98, 255);
 }
 /* Text inside footer */
@@ -109,6 +116,7 @@ h1:hover {
 h3 {
     font: 18px Verdana bold;
     font-weight: bold;
+    text-shadow: 0px 0px 2px rgb(99, 99, 99);
 }
     
 hr {
@@ -126,4 +134,16 @@ hr {
 
 .logo:hover {
     box-shadow: 0px 0px 7px 4px cyan;
+}
+
+/* box with shadow for stuff inside */
+.box {
+    width: 95%;
+    height: 100%;
+    /*margin-top: 35px; 
+    margin-bottom: 35px;
+    padding-bottom: 20px;*/
+    box-shadow: 0px 4px 10px 2px rgb(150, 150, 150);
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
 }
