@@ -16,7 +16,14 @@
 }
 .item:hover {
     transform: translateY(-6px);
-    box-shadow: 0px 6px rgb(3, 90, 252), 0px 6px 8px 3px rgb(150, 150, 150);
+    background-color: rgb(52, 255, 231);
+    border-color: rgb(37, 172, 255);
+    box-shadow: 0px 6px rgb(15, 97, 248), 0px 6px 8px 3px rgb(150, 150, 150);
+    cursor: pointer;
+}
+.item:active {
+    transform: translateY(0px);
+    box-shadow: 0px 0px rgb(3, 90, 252), 0px 0px 7px rgb(150, 150, 150);
 }
 
 .item > img {
@@ -24,4 +31,7 @@
     /*max-width: 200px;*/
     max-height: 200px;
     box-shadow: 3px 0px 0px 3px rgb(3, 157, 252);
+}
+.item:hover > img {
+    box-shadow: 3px 0px 0px 3px rgb(37, 172, 255);
 }

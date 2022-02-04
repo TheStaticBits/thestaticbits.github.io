@@ -80,8 +80,14 @@ footer > h1:hover {
     color: white;
 }
 
-/* Links */
+/* Resetting links */
 a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Links */
+.link {
     color: yellow;
     text-decoration: none;
 }
