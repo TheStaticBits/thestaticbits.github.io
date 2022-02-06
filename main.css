@@ -1,4 +1,4 @@
-* {margin: 0;}
+* { margin: 0; }
 
 body {
     background-color: white;
@@ -107,6 +107,9 @@ a {
     font-size: 40px;
     padding-top: 5px;
 }
+.title > img {
+    min-height: 150px;
+}
 /*
 .title:hover {
     padding-top: 110px;
@@ -115,15 +118,10 @@ a {
 */
 
 /* Background colors for different titles */
-.home-title {
-    background-color: rgb(72, 255, 56);
-}
-.projects-title {
-    background-color: yellow;
-}
-.about-title {
-    background-color: rgb(255, 65, 255);
-}
+.home-title     { background-color: rgb(72, 255, 56); }
+.projects-title { background-color: yellow; }
+.about-title    { background-color: rgb(255, 65, 255); }
+.tin-title      { background-color: rgb(30, 130, 255); }
 
 /* Header and others */
 h1 {
