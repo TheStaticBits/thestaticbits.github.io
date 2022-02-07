@@ -11,14 +11,10 @@ function show(element) {
     project.classList.add("proj-fade");
     overlay.classlist.add("overlay-fade");
     
-    endShow = function() {
+    project.addEventListener("animationend", function() {
         project.classList.remove("proj-fade");
         overlay.classList.remove("overlay-fade");
-        
-        project.removeEventListener("animationend", endShow);
-    }
-    
-    project.addEventListener("animationend", endShow);
+    }, { once: true });
 }
 
 function exitProject() {
@@ -28,15 +24,11 @@ function exitProject() {
     project.classList.add("out");
     overlay.classList.add("out");
     
-    endExit = function() {
+    project.addEventListener("animationend", function() {
         project.classList.remove("out");
         overlay.classList.remove("out");
         
         project.style.display = "none";
         overlay.style.display = "none";
-        
-        project.removeEventListener("animationend", endExit);
-    }
-    
-    project.addEventListener("animationend", endExit);
+    }, { once: true });
 }
