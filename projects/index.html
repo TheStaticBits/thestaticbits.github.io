@@ -42,7 +42,7 @@
                     <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click for more information</h3>
                 </div>
                 
-                <div class="item" onclick="show('SDL_Test')">
+                <div class="item" onclick="show('SDL_Test');">
                     <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" style="display: inline-block;">
                     <h1 style="margin-top: 5px">SDL Testing</h1>
                     <h3 style="margin-top: 10px; margin-left: 15px">Used for testing<br>Emscriptenwith SDL</h3>
@@ -72,9 +72,12 @@
 
             <!-- There Is Nothing (literally)-->
             <div class="game box stuck-center" id="TIN">
+                <button type="button" class="x" onclick="exitProject();">x</button>
             </div>
             
             <div class="game box stuck-center" id="SDL_Test">
+                <button type="button" class="x" onclick="exitProject();">x</button>
+
                 <!-- Canvas -->
                 <canvas id="SDL_Testing_Canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
                 
