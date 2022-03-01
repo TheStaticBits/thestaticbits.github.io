@@ -52,11 +52,12 @@
     transform: translate(-50%, -50%);
 }
 .game {
-    width: 75vw; height: 75vh;
+    width: 71vw; height: 71vh;
     box-shadow: 0px 4px 10px 4px rgb(100, 100, 100);
     z-index: 3;
     display: none;
     animation-duration: 160ms;
+    padding: 2vh 2vw;
 }
 .overlay {
     position: fixed;
@@ -68,3 +69,23 @@
     display: none;
     animation-duration: 160ms;
 }
+
+/* X button in the top right corner */
+.x {
+    position: fixed;
+    border-width: 0px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    float: right;
+    top: 0.4%;
+    left: 96%;
+    font: 30px Verdana;
+    text-shadow: 0px 0px 4px grey;
+    font-weight: bold;
+    transition-duration: 0.1s;
+}
+.x:hover { color: rgb(100, 100, 100); }
+.x:active { color: rgb(120, 120, 120); }
+
+.inline { display: inline-block; }

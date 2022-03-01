@@ -6,11 +6,11 @@
         <link rel="icon" href="../images/logo.png">
 
         <link type=text/css href="../main.css" rel="stylesheet"/>
-        <link type=text/css href="about.css" rel="stylesheet"/>
+        <link type=text/css href="projects.css" rel="stylesheet"/>
         
-        <script src="script.js"></script>
+        <script src="displayProject.js"></script>
 
-        <title>About | StaticBits</title>
+        <title>Projects | StaticBits</title>
     </head>
     <body>
         <!--Navigation Bar-->
@@ -22,58 +22,63 @@
             <!-- centered -->
             <div class="x-centered">
                 <a href="/"><button class="btn" type="button">Home</button></a>
-                <a href="/projects"><button class="btn" type="button">Projects</button></a>
-                <a href="/about"><button class="btn selected" type="button" >About</button></a>
+                <a href="/projects"><button class="btn selected" type="button">Projects</button></a>
+                <a href="/about"><button class="btn" type="button">About</button></a>
             </div>
         </div>
 
-        <div class="content" align="center" style="margin-bottom: 35px;"> 
-            <div class="about-title title">
-                <h1>About</h1>
+        <div class="content" align="center">
+            <div class="projects-title title">
+                <h1 id="title">Projects</h1>
             </div>
-
-            <!-- Left boxes -->
-            <div class="column">
-                <div class="info box">
-                    <h1>About Me</h1>
-
-                    <h3 class="text-section">
-                        I'm currently a teenager in high school who likes to program in his free time. Hopefully I'll be able to turn this hobby into a likeable job in the future! For now though, I'm just going to continue learning and enjoying myself by programming in my free time.
-                    </h3>
-                </div>
-
-                <div class="info box">
-                    <h1>This Website</h1>
-
-                    <h3 class="text-section">
-                        This website is still under development, and you may see some new features every now and then. I may upload some games in the projects area, at least ones that I are made using Javascript or that can be ported to the web, such as using Emscripton for SDL2 games. If I can't do either, I'll upload an exe file.
-                    </h3>
-                </div>
-            </div>
-
-            <!-- Right boxes -->
-            <div class="column">
-                <div class="info box">
-                    <h1>Skills</h1>
-
-                    <h3 class="text-section">
-                        Languages: Python, C++, HTML/CSS    <br>
-                        Libraries: Pygame, SDL2             <br><br>
-                        
-                        The language I'm the most familiar with is Python. I'm still getting more familiar with C++ and HTML/CSS, and may learn Javascript, Java, and more in the future.
-                    </h3>
-                </div>
-
-                <div class="info box">
-                    <h1>Other</h1>
-
-                    <h3 class="text-section">
-                        In my school, I'm currently in Business Professionals of America (or BPA for short). Me and a couple friends made a video game for the Software Engineering Team competition, which you'll probably be able to find in the <a href="/projects">Projects</a> section of this website. The competition's still being judged.
-                    </h3>
-                </div>
-            </div>
-        </div>
             
+            <!-- Choosing a project -->
+            <div class="box" style="padding-top: 20px; margin: 35px 0px;">
+                <!--There Is Nothing project -->
+                <div class="item" onclick="show('TIN');">
+                    <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" class="inline">
+                    <h1 style="margin-top: 5px">There Is Nothing</h1>
+                    <h3 style="margin-top: 10px; margin-left: 15px">A game made for the Business Professionals<br>of America competition. Meet multiple characters on your journey through the underground! After completion, try<br>speedrun mode and beat your friends!</h3>
+                    <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click for more information</h3>
+                </div>
+                
+                <div class="item">
+                    <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" class="inline">
+                    <h1 style="margin-top: 5px">There Is Nothing</h1>
+                    <h3 style="margin-top: 10px; margin-left: 15px;">A game made for the Business Professionals<br>of America competition. Meet multiple characters on your journey through the underground! After completion, try<br>speedrun mode and beat your friends!</h3>
+                    <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click for more information</h3>
+                </div>
+                
+                <!-- <br>
+                
+                <div class="item">
+                    <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" class="inline">
+                    <h1 style="margin-top: 5px">There Is Nothing</h1>
+                    <h3 style="margin-top: 10px; margin-left: 15px">A game made for the Business Professionals<br>of America competition. Meet multiple characters on your journey through the underground! After completion, try<br>speedrun mode and beat your friends!</h3>
+                    <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click for more information</h3>
+                </div>
+                
+                <div class="item">
+                    <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" class="inline">
+                    <h1 style="margin-top: 5px">There Is Nothing</h1>
+                    <h3 style="margin-top: 10px; margin-left: 15px">A game made for the Business Professionals<br>of America competition. Meet multiple characters on your journey through the underground! After completion, try<br>speedrun mode and beat your friends!</h3>
+                    <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click for more information</h3>
+                </div> -->
+            </div>
+            
+            <!-- Game popups background -->
+            <div class="overlay" id="overlay" onclick="exitProject();"></div>
+            
+            <!-- There Is Nothing popup -->
+            <div class="game box stuck-center" id="TIN">
+                <button type="button" class="x" onclick="exitProject();">x</button>
+                
+                <!-- <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" class="inline">                
+                <h1 style="margin-top: 5px">There Is Nothing</h1>
+                <h3 style="margin-top: 10px; margin-left: 15px;">A game made for the Business Professionals<br>of America competition. Meet multiple characters on your journey through the underground! After completion, try<br>speedrun mode and beat your friends!</h3> -->
+            </div>
+        </div>
+
         <footer>
             <h1>This website was created by <a class="link" href="https://github.com/thestaticbits">@thestaticbits</a> on GitHub</h1>
         </footer>
