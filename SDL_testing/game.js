@@ -196,7 +196,7 @@ Module['FS_createPath']("/", "res", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/res/platform.png", "start": 0, "end": 131}, {"filename": "/res/player.png", "start": 131, "end": 398}], "remote_package_size": 398, "package_uuid": "fee16217-b5bf-4479-b078-6fc1112ca7df"});
+    loadPackage({"files": [{"filename": "/res/platform.png", "start": 0, "end": 131}, {"filename": "/res/player.png", "start": 131, "end": 398}], "remote_package_size": 398, "package_uuid": "f91a4cf4-bb91-4d05-943e-32e67af9faff"});
 
   })();
 
