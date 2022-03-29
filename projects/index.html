@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
 
-        <link rel="icon" href="../images/logo.png">
+        <link rel="icon" href="/images/logo.png">
 
-        <link type=text/css href="../main.css" rel="stylesheet"/>
+        <link type=text/css href="/main.css" rel="stylesheet"/>
         <link type=text/css href="projects.css" rel="stylesheet"/>
         
         <script src="displayProject.js"></script>
@@ -16,7 +16,7 @@
         <!--Navigation Bar-->
         <div class="bar" align="right">
             <!-- Logo -->
-            <a href="/"><img src="../images/logo.png" class="logo" align="left" style="float: left;"></a>
+            <a href="/"><img src="/images/logo.png" class="logo" align="left" style="float: left;"></a>
             
             <!-- Page Buttons -->
             <!-- centered -->
@@ -42,13 +42,14 @@
                     <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click for more information</h3>
                 </div>
                 
-                <div class="item" href="/SDL_testing/">
-                    <img src="https://media.discordapp.net/attachments/833426346277208086/927682679506350140/unknown.png" alt="Image of There Is Nothing" align="left" style="display: inline-block;">
-                    <h1 style="margin-top: 5px">SDL Testing</h1>
-                    <h3 style="margin-top: 10px; margin-left: 15px">Used for testing<br>Emscriptenwith SDL</h3>
-                    <br><br><br>
-                    <h3 style="color: rgb(0, 17, 255); margin-top: 5px">Click to play</h3>
-                </div>
+                <a href="/projects/SDL_testing">
+                    <div class="item">
+                        <img src="/images/SDL_testing_img.png" alt="Image of SDL Test Game" align="left" style="display: inline-block;">
+                        <h1 style="margin-top: 5px">SDL Testing</h1>
+                        <h3 style="margin-top: 10px; margin-left: 15px">A game I made with SDL2 & C++, compiled<br> with Emscripten. This is expiremental.<br>Try it out!</h3>
+                        <h3 style="color: rgb(0, 17, 255); margin-top: 45px;">Click to play</h3>
+                    </div>
+                </a>
                 
                 <!-- <br>
                 
@@ -75,21 +76,9 @@
                 <button type="button" class="x" onclick="exitProject();">x</button>
             </div>
             
+            <!-- SDL_testing (not working right now)-->
             <div class="game box stuck-center" id="SDL_Test">
                 <button type="button" class="x" onclick="exitProject();">x</button>
-
-                <!-- Canvas -->
-                <canvas id="SDL_Testing_Canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
-                
-                <!-- Allowing access to canvas -->
-                <script type='text/javascript'>
-                    var Module = {
-                        canvas: (function() { return document.getElementById('SDL_Testing_Canvas'); })()
-                    };
-                </script>
-
-                <!-- Application code connection-->
-                <script src="application.js"></script>
             </div>
 
         </div>
