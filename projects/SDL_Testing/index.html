@@ -8,13 +8,16 @@
 
     <body>
         <!-- Canvas -->
-        <canvas id="SDL_Testing_Canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
+        <canvas id="canvas" align="center" oncontextmenu="event.preventDefault()"></canvas>
+        
+        <!-- Allowing access to canvas -->
+        <script type='text/javascript'>
+            var Module = {
+                canvas: (function() { return document.getElementById('canvas'); })()
+            };
+        </script>
 
         <!-- Application code-->
         <script src="game.js"></script>
-
-        <script>
-            run_SDL_Testing();
-        </script>
     </body>
 </html>
