@@ -1,0 +1,44 @@
+{
+    "Core": {
+        "imgPath": "res/buildings/core.png",
+        "size": [4, 4],
+
+        "1": {
+            "radius": 0
+        },
+        "2": {
+            "upgradeCost": 1000,
+            "upgradeTime": 1200,
+            "radius": 0,
+            "sizeIncrease": 4
+        }
+    },
+    "Silver Storage": {
+        "imgPath": "res/buildings/silverStorage.png",
+        "size": [3, 2],
+
+        "max": {
+            "Core L1": 1,
+            "Core L2": 2,
+            "Core L3": 2
+        },
+
+        "1": {
+            "storage": 1000,
+            "needs": "Core L1",
+            "upgradeTime": 10
+        },
+        "2": {
+            "upgradeCost": 400,
+            "needs": "Core L2",
+            "storage": 4000,
+            "upgradeTime": 2700
+        },
+        "3": {
+            "upgradeCost": 1000,
+            "needs": "Core L2",
+            "storage": 7500,
+            "upgradeTime": 7200
+        }
+    }
+}
