@@ -13,7 +13,7 @@
             "sizeIncrease": 4
         }
     },
-    "Silver Storage": {
+    "SilverStor": {
         "imgPath": "res/buildings/silverStorage.png",
         "size": [3, 2],
 
