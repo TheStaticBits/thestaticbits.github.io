@@ -196,7 +196,7 @@ Module['FS_createPath']("/", "data", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/data/buildings.json", "start": 0, "end": 963}], "remote_package_size": 963, "package_uuid": "a26abbc9-3738-430d-a10e-953d7644c530"});
+    loadPackage({"files": [{"filename": "/data/buildings.json", "start": 0, "end": 963}], "remote_package_size": 963, "package_uuid": "8a2a9513-66ff-4d7d-a360-5f4ffda36e41"});
 
   })();
 
